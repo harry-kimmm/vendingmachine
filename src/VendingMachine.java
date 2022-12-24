@@ -7,7 +7,6 @@ public class VendingMachine {
         myItems = new ArrayList<Item>();
     }
 
-
     public void addItem(Item item){
         boolean found = false;
         for (int i = 0; i < myItems.size(); i++){
