@@ -9,6 +9,4 @@ public class Customer {
         this.balance = balance;
     }
 
-
-
 }
