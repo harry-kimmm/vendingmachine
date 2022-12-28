@@ -311,11 +311,95 @@ public class VendingMachineFrame extends JFrame implements ActionListener{
                 addField2.setVisible(true);
             }  
         }
-
-        if(e.getSource()==addFieldBut2){
+        if(e.getSource()==addFieldBut2 && addField.getText().equals("1")) {
             int i=Integer.parseInt(addField2.getText()); 
             machine.addItems(ichezit, i);
             chezitnum.setText(ichezit.getAmount() + " | $" + ichezit.getprice());
+            addFieldBut2.setVisible(false);
+            addField2.setVisible(false);
+            add.setText("");
+        }
+        if(e.getSource()==addFieldBut) {
+            if(addField.getText().equals("2")){
+                add.setText("How many?"); 
+                addFieldBut.setVisible(false);
+                addField.setVisible(false);
+                addFieldBut2.setVisible(true);
+                addField2.setVisible(true);
+            }  
+        }
+        if(e.getSource()==addFieldBut2 && addField.getText().equals("2")) {
+            int i=Integer.parseInt(addField2.getText()); 
+            machine.addItems(idoritos, i);
+            doritosnum.setText(idoritos.getAmount() + " | $" + idoritos.getprice());
+            addFieldBut2.setVisible(false);
+            addField2.setVisible(false);
+            add.setText("");
+        }
+        if(e.getSource()==addFieldBut) {
+            if(addField.getText().equals("3")){
+                add.setText("How many?"); 
+                addFieldBut.setVisible(false);
+                addField.setVisible(false);
+                addFieldBut2.setVisible(true);
+                addField2.setVisible(true);
+            }  
+        }
+        if(e.getSource()==addFieldBut2 && addField.getText().equals("3")) {
+            int i=Integer.parseInt(addField2.getText()); 
+            machine.addItems(igatorade, i);
+            gatoradenum.setText(igatorade.getAmount() + " | $" + igatorade.getprice());
+            addFieldBut2.setVisible(false);
+            addField2.setVisible(false);
+            add.setText("");
+        }
+        if(e.getSource()==addFieldBut) {
+            if(addField.getText().equals("4")){
+                add.setText("How many?"); 
+                addFieldBut.setVisible(false);
+                addField.setVisible(false);
+                addFieldBut2.setVisible(true);
+                addField2.setVisible(true);
+            }  
+        }
+        if(e.getSource()==addFieldBut2 && addField.getText().equals("4")) {
+            int i=Integer.parseInt(addField2.getText()); 
+            machine.addItems(ireeses, i);
+            reesesnum.setText(ireeses.getAmount() + " | $" + ireeses.getprice());
+            addFieldBut2.setVisible(false);
+            addField2.setVisible(false);
+            add.setText("");
+        }
+        if(e.getSource()==addFieldBut) {
+            if(addField.getText().equals("5")){
+                add.setText("How many?"); 
+                addFieldBut.setVisible(false);
+                addField.setVisible(false);
+                addFieldBut2.setVisible(true);
+                addField2.setVisible(true);
+            }  
+        }
+        if(e.getSource()==addFieldBut2 && addField.getText().equals("5")) {
+            int i=Integer.parseInt(addField2.getText()); 
+            machine.addItems(isprite, i);
+            spritenum.setText(isprite.getAmount() + " | $" + isprite.getprice());
+            addFieldBut2.setVisible(false);
+            addField2.setVisible(false);
+            add.setText("");
+        }
+        if(e.getSource()==addFieldBut) {
+            if(addField.getText().equals("6")){
+                add.setText("How many?"); 
+                addFieldBut.setVisible(false);
+                addField.setVisible(false);
+                addFieldBut2.setVisible(true);
+                addField2.setVisible(true);
+            }  
+        }
+        if(e.getSource()==addFieldBut2 && addField.getText().equals("6")) {
+            int i=Integer.parseInt(addField2.getText()); 
+            machine.addItems(iwater, i);
+            waternum.setText(iwater.getAmount() + " | $" + iwater.getprice());
             addFieldBut2.setVisible(false);
             addField2.setVisible(false);
             add.setText("");
