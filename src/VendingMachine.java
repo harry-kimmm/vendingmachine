@@ -1,10 +1,21 @@
 import java.util.ArrayList;
 
 public class VendingMachine {
+    public static String manufacturer = "Jason Co.";
     private ArrayList<Item> myItems;
+    private String type = "normal";
 
     public VendingMachine(){
         myItems = new ArrayList<Item>();
+    }
+
+    public VendingMachine(String machinename){
+        myItems = new ArrayList<Item>();
+        type = machinename;
+    }
+
+    public String getType(){
+        return type;
     }
 
     public void addItem(Item item){
@@ -40,7 +51,6 @@ public class VendingMachine {
             }
         }
     }
-
     public void removeAllItems(Item item){
         for (int i = 0; i < myItems.size(); i++){
             if (myItems.get(i).getName().equals(item.getName())) {
@@ -49,4 +59,14 @@ public class VendingMachine {
         }
     }
 
+
+
+    public void showItems(){
+        if (type.equals("deluxe")){
+            System.out.println("*:･ﾟ✧*:･ﾟ✧ " + myItems + " *:･ﾟ✧*:･ﾟ✧");
+        }
+        else {
+            System.out.println(myItems);
+        }
+    }
 }

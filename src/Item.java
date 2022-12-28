@@ -1,4 +1,7 @@
+import java.text.DecimalFormat;
+
 public class Item {
+    private static final DecimalFormat df = new DecimalFormat("0.00");
     private String itemname;
     private double itemprice;
     private int amount;
@@ -6,7 +9,11 @@ public class Item {
     public Item(String name, double price){
         itemname = name;
         itemprice = price;
-        amount = 1;
+        amount = 0;
+    }
+
+    public String getprice(){
+        return df.format(itemprice);    
     }
 
     public String getName(){
@@ -19,5 +26,9 @@ public class Item {
 
     public void setAmount(int amount) {
         this.amount = amount;
+    }
+
+    public String toString(){
+        return itemname + ": $" + itemprice + " [" + amount + "]";
     }
 }
