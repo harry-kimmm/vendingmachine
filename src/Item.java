@@ -1,5 +1,7 @@
 import java.text.DecimalFormat;
 
+import java.text.DecimalFormat;
+
 public class Item {
     private static final DecimalFormat df = new DecimalFormat("0.00");
     private String itemname;
@@ -27,5 +29,4 @@ public class Item {
     public void setAmount(int amount) {
         this.amount = amount;
     }
-
 }

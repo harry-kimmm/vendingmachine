@@ -4,7 +4,6 @@ import java.awt.event.*;
 import java.util.Random;
 import java.awt.Image;
 import javax.swing.*;
-import java.text.DecimalFormat;
 
 public class VendingMachineFrame extends JFrame implements ActionListener{
     JTextField buyField, addField, addField2;
